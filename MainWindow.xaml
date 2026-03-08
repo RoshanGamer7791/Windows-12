@@ -1,0 +1,23 @@
+﻿<Window x:Class="Windows_12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Windows_12"
+        mc:Ignorable="d"
+        Icon="/logo.png"
+        Title="Windows 12" Height="800" Width="1200">
+    <Window.Background>
+        <ImageBrush ImageSource="/background.png"/>
+    </Window.Background>
+    <Grid>
+        <Border Width="1200" Height="70" Margin="0,694,0,0" CornerRadius="20" Background="#FF969696">
+            <Button Margin="565,0,565,0" Click="OpenStartMenu">
+                <Button.Background>
+                    <ImageBrush ImageSource="/logo.png" Stretch="UniformToFill" TileMode="None"/>
+                </Button.Background>
+            </Button>
+        </Border>
+        <Frame x:Name="StartMenuFrame" Content="Frame" Margin="430,318,430,75" Foreground="{x:Null}" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
