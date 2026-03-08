@@ -17,12 +17,20 @@
                     <GradientStop Color="White" Offset="0.5"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <Button HorizontalAlignment="Left" Height="90" Margin="9,17,0,0" VerticalAlignment="Top" Width="90" Foreground="{x:Null}" Background="{x:Null}" Click="OpenNotepad">
-                <StackPanel Orientation="Vertical"  Width="90" Height="90">
-                    <Image Source="/Notepad.png" Width="70" Margin="0,-5,0,0"/>
-                    <TextBlock Text="Notepad" Foreground="Black" TextAlignment="Center"/>
-                </StackPanel>
-            </Button>
+            <StackPanel Orientation="Horizontal">
+                <Button Width="70" Height="70" VerticalAlignment="Top" Margin="0,5,20,0" Background="{x:Null}">
+                    <StackPanel Orientation="Vertical" Width="70" Height="70">
+                        <Image Source="/Notepad.png" Width="50" Margin="0,-5,0,0"/>
+                        <TextBlock Text="Notepad" TextAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button Width="70" Height="70" Margin="0,-290,0,0" Background="{x:Null}" Click="OpenCalculator">
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="/calc.png" Width="50" Margin="0,-2,0,0"/>
+                        <TextBlock Text="Calculator"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
         </Border>
     </Grid>
 </Page>
