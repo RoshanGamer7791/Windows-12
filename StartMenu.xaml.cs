@@ -28,5 +28,11 @@ namespace Windows_12
             Notepad notepad = new Notepad();
             notepad.Show();
         }
+
+        private void OpenCalculator(object sender, RoutedEventArgs e)
+        {
+            Calculator calculator = new Calculator();
+            calculator.Show();
+        }
     }
 }
